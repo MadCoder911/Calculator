@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/bootstrap.min.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div>
+      <div class="calculator card">
+        <input
+          type="text"
+          data-previous-operand
+          class="previousOperand z-depth-1"
+          value="0"
+          disabled
+        />
+        <input
+          type="text"
+          data-current-operand
+          class="calculator-screen currentOperand z-depth-1"
+          value="0"
+          disabled
+        />
+
+        <div class="calculator-keys">
+          <button
+            type="button"
+            data-operation
+            class="operator btn btn-info"
+            value="+"
+          >
+            +
+          </button>
+          <button
+            type="button"
+            data-operation
+            class="operator btn btn-info"
+            value="-"
+          >
+            -
+          </button>
+          <button
+            type="button"
+            data-operation
+            class="operator btn btn-info"
+            value="*"
+          >
+            &times;
+          </button>
+          <button
+            type="button"
+            data-operation
+            class="operator btn btn-info"
+            value="/"
+          >
+            &divide;
+          </button>
+
+          <button
+            type="button"
+            value="7"
+            data-number
+            class="btn btn-light waves-effect"
+          >
+            7
+          </button>
+          <button
+            type="button"
+            value="8"
+            data-number
+            class="btn btn-light waves-effect"
+          >
+            8
+          </button>
+          <button
+            type="button"
+            value="9"
+            data-number
+            class="btn btn-light waves-effect"
+          >
+            9
+          </button>
+
+          <button
+            type="button"
+            value="4"
+            data-number
+            class="btn btn-light waves-effect"
+          >
+            4
+          </button>
+          <button
+            type="button"
+            value="5"
+            data-number
+            class="btn btn-light waves-effect"
+          >
+            5
+          </button>
+          <button
+            type="button"
+            value="6"
+            data-number
+            class="btn btn-light waves-effect"
+          >
+            6
+          </button>
+
+          <button
+            type="button"
+            value="1"
+            data-number
+            class="btn btn-light waves-effect"
+          >
+            1
+          </button>
+          <button
+            type="button"
+            value="2"
+            data-number
+            class="btn btn-light waves-effect"
+          >
+            2
+          </button>
+          <button
+            type="button"
+            value="3"
+            data-number
+            class="btn btn-light waves-effect"
+          >
+            3
+          </button>
+
+          <button
+            type="button"
+            value="0"
+            data-number
+            class="btn btn-light waves-effect"
+          >
+            0
+          </button>
+          <button
+            data-number
+            type="button"
+            class="decimal function btn btn-secondary"
+            value="."
+          >
+            .
+          </button>
+          <button
+            type="button"
+            data-all-clear
+            class="all-clear function btn btn-danger btn-sm"
+            value="all-clear"
+          >
+            AC
+          </button>
+
+          <button
+            data-equals
+            type="button"
+            class="equal-sign operator btn btn-default"
+            value="="
+          >
+            =
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script/script.js"></script>
+  </body>
+</html>
