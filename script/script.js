@@ -70,6 +70,7 @@ class Calculator {
     const stringNumber = number.toString();
     const intigerDigits = parseFloat(stringNumber.split(".")[0]);
     const decimalDigits = stringNumber.split(".")[1];
+    console.log(decimalDigits);
     let integerDisplay;
     if (isNaN(intigerDigits)) {
       integerDisplay = "";
